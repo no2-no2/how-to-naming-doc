@@ -12,7 +12,7 @@
             background-color: #f0f0f0;
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* スクロールしても背景を固定 */
+            background-attachment: fixed;
             
             font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
             color: #333;
@@ -25,7 +25,7 @@
         .paper {
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.93); /* 白背景（少し透けさせる） */
+            background-color: rgba(255, 255, 255, 0.93);
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -71,7 +71,6 @@
         /* スマホ向けの調整（画面幅600px以下） */
         @media (max-width: 600px) {
             body {
-                /* スマホ用の背景画像に切り替え */
                 background-image: url('background.png');
                 padding: 15px;
             }
@@ -102,33 +101,27 @@
             本アプリ内の処理はすべてユーザーの端末内で行われ、外部サーバーとの通信を行う機能（API通信、外部ライブラリによるデータ送信等）を含みません。
         </p>
 
-        ）を外して有効化してください。
-             ============================================================ 
-        
+        <!--
         <h2>1. 利用者情報の取得と利用目的</h2>
         <p>
             本アプリでは、アプリの利便性向上および広告配信のために、以下の第三者が提供するサービスを利用しており、これに伴いユーザー情報が送信される場合があります。<br>
             送信される情報は匿名化されており、個人を特定するものではありません。
         </p>
-
+        
         <h3>AdMob（Google Inc.）</h3>
         <ul>
             <li><strong>利用目的:</strong> 広告配信のため</li>
             <li><strong>送信される情報:</strong> 広告ID（Advertising ID）、アプリの利用状況、端末情報</li>
             <li><strong>詳細:</strong> <a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank">Google ポリシーと規約</a></li>
         </ul>
-
+        
         <h3>Firebase Crashlytics（Google Inc.）</h3>
         <ul>
             <li><strong>利用目的:</strong> アプリのクラッシュ情報の収集・解析による品質向上のため</li>
             <li><strong>送信される情報:</strong> クラッシュログ、端末情報（UUIDなど）、アプリのバージョン</li>
             <li><strong>詳細:</strong> <a href="https://firebase.google.com/support/privacy?hl=ja" target="_blank">Firebase のプライバシーとセキュリティ</a></li>
         </ul>
-        
-             ============================================================
-             【将来用：SDK導入版】ここまで
-             ============================================================ -->
-
+        -->
 
         <h2>2. 第三者への提供</h2>
         <p>
