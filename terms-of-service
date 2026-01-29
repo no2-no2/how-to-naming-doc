@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ぴたりな 利用規約</title>
+    <style>
+        /* 基本設定 */
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            /* bodyには背景を指定しません */
+            background-color: transparent; 
+        }
+
+        /* 【重要】背景専用の独立したレイヤー */
+        #bg-layer {
+            position: fixed;  /* 画面に固定 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;     /* 画面いっぱいに */
+            z-index: -1;      /* 文字より奥へ */
+            
+            /* PC・タブレット用の背景設定 */
+            background-image: url('webBackground.png');
+            background-color: #f0f0f0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* 文章が乗る白い紙の部分 */
+        .paper {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* 文字の可読性のため少し不透明度を上げています(0.4->0.8) */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative; /* 重なり順を保証 */
+        }
+
+        h1 {
+            border-bottom: 2px solid #ff7f7f;
+            padding-bottom: 10px;
+            font-size: 24px;
+        }
+
+        h2 {
+            background-color: rgba(249, 249, 249, 0.4);
+            padding: 10px;
+            border-left: 5px solid #ff7f7f;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+
+        /* スマホ向けレイアウト (767px以下) */
+        @media (max-width: 767px) {
+            /* 背景レイヤーの画像を切り替え */
+            #bg-layer {
+                background-image: url('background.png');
+            }
+
+            body {
+                padding: 15px;
+            }
+
+            .paper {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bg-layer"></div>
+
+    <div class="paper">
+        <h1>利用規約</h1>
+        <p style="text-align: right; font-size: 0.9em; color: #666;">制定日: 2026年XX月XX日</p>
+
+        <p>
+            この利用規約（以下「本規約」といいます。）は、nonononono（以下「当方」といいます。）がスマートフォン用アプリ「ぴたりな」（以下「本アプリ」といいます。）で提供するサービス（以下「本サービス」といいます。）の利用条件を定めるものです。利用者の皆さま（以下「ユーザー」といいます。）には、本規約に従って本アプリをご利用いただきます。
+        </p>
+
+        <h2>第1条（適用）</h2>
+        <p>本規約は、ユーザーと当方との間の本アプリの利用に関わる一切の関係に適用されるものとします。</p>
+
+        <h2>第2条（サービスの概要と非専門性）</h2>
+        <ol>
+            <li>本アプリは、一般的な姓名判断の情報に基づき、運気が高いとされる名前の検討を支援するツールです。</li>
+            <li>本アプリで提供される姓名判断の内容は、一般的な情報をもとに当方が独自にまとめたものであり、学術的・専門的な根拠を保証するものではありません。</li>
+            <li>ユーザーは、本アプリの情報をあくまで参考情報として利用するものとし、より厳密または専門的な情報を求める場合は、必ず専門家に相談するものとします。</li>
+        </ol>
+
+        <h2>第3条（利用料金および広告）</h2>
+        <ol>
+            <li>本アプリの利用料金は無料です。</li>
+            <li>当方は、本アプリ内に当方または第三者の広告を掲載することができるものとします。</li>
+        </ol>
+
+        <h2>第4条（禁止事項）</h2>
+        <p>ユーザーは、本アプリの利用にあたり、以下の行為をしてはなりません。</p>
+        <ol>
+            <li>本アプリのプログラムに対する逆コンパイル、逆アセンブル、リバースエンジニアリング、その他本アプリのソースコードを解析する行為。</li>
+            <li>本アプリのサーバーまたはネットワークの機能を破壊したり、妨害したりする行為。</li>
+            <li>当方のサービスの運営を妨害するおそれのある行為。</li>
+            <li>正当な理由を伴わない、本アプリの内容に関する削除要求や誹謗中傷。</li>
+            <li>その他、当方が不適切と判断する行為。</li>
+        </ol>
+
+        <h2>第5条（免責事項）</h2>
+        <ol>
+            <li>当方は、本アプリの内容（姓名判断の結果の正確性、妥当性、信頼性、有用性等）について、明示的にも黙示的にも一切保証しません。</li>
+            <li>本アプリの姓名判断の内容が、特定の専門家の見解や他の情報源と乖離していたとしても、当方はこれについて一切の責任を負いません。</li>
+            <li>当方は、本アプリの利用に関してユーザーに生じたあらゆる損害（直接的、間接的を問わず、命名に関するトラブル、心理的損害、その他一切の不利益）について、一切の責任を負いません。</li>
+            <li>当方は、本アプリの提供の停止、欠陥、中断、終了、または内容の変更によりユーザーに生じた損害について、一切の責任を負いません。</li>
+        </ol>
+
+        <h2>第6条（知的財産権）</h2>
+        <p>本アプリに関する著作権、商標権、その他一切の知的財産権は、当方または正当な権利を有する第三者に帰属します。ユーザーはこれらを無断で複製、転載、改変することはできません。</p>
+
+        <h2>第7条（入力データの扱い）</h2>
+        <p>本アプリは会員登録なしで利用可能であり、ユーザーがアプリ内で入力した名前等のデータは、原則としてユーザーの端末内にのみ保存されます。当方がユーザーの入力した個人を特定できる情報を収集・利用することはありません。</p>
+
+        <h2>第8条（規約の変更）</h2>
+        <p>当方は、必要と判断した場合には、ユーザーに通知することなくいつでも本規約を変更することができるものとします。本規約の変更後、ユーザーが本アプリを利用したことをもって、変更後の規約に同意したものとみなします。</p>
+
+        <h2>第9条（準拠法・裁判管轄）</h2>
+        <ol>
+            <li>本規約の解釈にあたっては、日本法を準拠法とします。</li>
+            <li>本サービスに関して紛争が生じた場合には、当方の所在地を管轄する裁判所を専属的合意管轄とします。</li>
+        </ol>
+
+    </div>
+
+</body>
+</html>
